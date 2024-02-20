@@ -13,8 +13,7 @@ instance.interceptors.response.use(
     return response
   },
   error => {
-    console.log(error)
-
+    console.error(error)
     useAppStore().setApiError(error.code)
   }
 )
