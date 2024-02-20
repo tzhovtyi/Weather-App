@@ -17,6 +17,11 @@ import { api, convertToForecast, pruneCurrent } from '@/utils'
 import { ref } from 'vue'
 import type { ForecastItem, CurrentWeather } from '~/types'
 
+useSeoMeta({
+  title: 'Weather App',
+  description: 'A Weather App (test task)'
+})
+
 const searchBarCentered = ref(true)
 const location = ref('')
 const currentWeather = ref<CurrentWeather | null>(null)
@@ -34,7 +39,6 @@ const getWeather = async () => {
 
     threeDayForecast.value = convertToForecast(forecast.list)
   } catch (_) {
-    // errors are processed through interceptors
     searchBarCentered.value = true
   }
 }
