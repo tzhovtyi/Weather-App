@@ -4,7 +4,7 @@
 
 ## Установка зависимостей
 
-Make sure to install the dependencies:
+Рекомендуется использовать yarn, у npm есть баг с разрешением Pinia при использовании Nuxt 3
 
 ```bash
 # npm
