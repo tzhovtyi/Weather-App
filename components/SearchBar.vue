@@ -4,7 +4,7 @@
       <div class="searchbar__container">
         <input v-model="model" class="searchbar__input" placeholder="Search location..." />
       </div>
-      <button class="searchbar__search-btn" @click="$emit('submit')">
+      <button class="searchbar__search-btn" @click="$emit('submit')" :disabled="!model">
         <IconsSearchIcon />
       </button>
     </div>
