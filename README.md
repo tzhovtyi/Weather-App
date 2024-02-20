@@ -49,4 +49,12 @@ yarn preview
 
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Фичи, достойные внимания:
+
+- Все запросы к openweathermap осуществляются через Nitro сервер (~server/api) - защищает api ключи, посольку они не хранятся на клиенте (хотя в данном приложении для удобства проверки нет .env, все в nuxt.config.ts), а также предотвращает CORS ошибки
+
+- Иконка для нынешней погоды в зависимости от кода погоды
+
+- Фон виджетов погоды генерируется в зависимости от температуры в локации
+
+- Для обработки ошибок API используются Axios interceptors
