@@ -2,7 +2,11 @@
   <header class="header">
     <div class="header__inner">
       <div class="header__left">
-        <h1 class="header__title">WeatherApp</h1>
+        <div class="header__name">
+          <IconsLogoMain />
+          <h1 class="header__title">WeatherApp</h1>
+        </div>
+
         <p class="header__subtitle">test task</p>
       </div>
       <div class="header__right">

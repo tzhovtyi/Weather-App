@@ -34,6 +34,15 @@
   padding: 0 4px;
 }
 
+.header__name {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  svg {
+    display: none;
+  }
+}
+
 .header__right {
   display: flex;
   align-items: center;
@@ -51,6 +60,14 @@
     font-size: 16px;
   }
 
+  .header__name {
+    svg {
+      display: unset;
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+
   .header__autor {
     max-width: unset;
     font-size: 20px;
@@ -65,6 +82,13 @@
   }
   .header__subtitle {
     font-size: 20px;
+  }
+
+  .header__name {
+    svg {
+      max-width: 70px;
+      max-height: 70px;
+    }
   }
 
   .header__autor {
