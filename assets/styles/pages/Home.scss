@@ -1,0 +1,23 @@
+.home {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  min-height: 101vh;
+}
+
+.home__inner {
+  width: 100%;
+  max-width: $el-max-width;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .home {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .home {
+    padding: 0 32px;
+  }
+}

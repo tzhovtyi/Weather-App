@@ -1,0 +1,94 @@
+@import './normalize.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../fonts/Comfortaa-Light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../fonts/Comfortaa-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../fonts/Comfortaa-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../fonts/Comfortaa-SemiBold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../fonts/Comfortaa-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 1.2;
+  background: $background-main;
+}
+
+// vue animations
+
+.slide-fade-enter-active {
+  transition: all 0.5s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-enter-from {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.slide-fade-leave-to {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.slide-fade-vertical-enter-active {
+  transition: all 0.5s ease;
+}
+
+.slide-fade-vertical-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-vertical-leave-to,
+.slide-fade-vertical-enter-from {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}

@@ -1,0 +1,32 @@
+.error-message {
+  position: fixed;
+  top: 64px;
+  right: 16px;
+  max-width: calc(100% - 32px);
+  padding: 16px;
+  background: $error-bg;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  svg {
+    max-width: 24px;
+    max-height: 24px;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .error-message {
+    top: 84px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .error-message {
+    top: 120px;
+    font-size: 24px;
+  }
+}
